@@ -1,0 +1,7 @@
+/* TinyMCE Styles (show up for links) */
+a.call-to-action {}
+a.call-to-action:hover {}
+a.right-arrow {}
+a.right-arrow:hover {}
+.alignleft50percent	{ float:left;width:40%;padding:10px; }
+.alignright50percent	{ float:right;width:40%;padding:10px; }
