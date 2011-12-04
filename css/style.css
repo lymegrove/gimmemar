@@ -26,6 +26,8 @@ footer, header, nav, section, audio, video {
 
 a img {border: 0;}
 
+body	{	margin:auto;	}
+
 
 
 /*	Typography presets
@@ -73,7 +75,7 @@ body {
 
 p{
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: 222;
+	color: rgba(77, 75, 75, 1);
 	text-decoration: none;
 	word-spacing: normal;
 	text-align: left;
@@ -82,6 +84,8 @@ p{
 	font-size: 11px/14px;
 }
 
+header	{	color: rgba(77, 75, 75, 1);	}
+aside	{	color: rgba(77, 75, 75, 1);	}
 
 
 /* Selection colours (easy to forget) */
@@ -110,8 +114,8 @@ label, input[type=button], input[type=submit], button { cursor: pointer; }
 
 a:hover, a:active { outline: none; }
 
-a, a:active, a:visited { color:#607890; }
-a:hover { color:#036; }
+a, a:active, a:visited { 	color:rgba(177, 171, 171, 1); }
+a:hover { color:rgba(101, 22, 55, 1); }
 a	{
 	text-decoration: none;
 	-webkit-transition: all 0.3s linear;
@@ -134,11 +138,12 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
-	width: 960px;
+	width:95%;
+	min-width: 960px;
 	padding: 20px 72px 48px 84px;
-	background: rgba(255, 255, 255, 1);
-	color: rgb(60,60,60);
-	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	color: rgba(77, 75, 75, 1);
+	background: rgba(41, 40, 40, 1);
+		-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
 body:before 
@@ -159,6 +164,8 @@ body:before
 
 header	{
 	height:100px;
+	width:95%;
+	min-width: 960px;
 }
 
 header h1	{
@@ -195,7 +202,8 @@ width:100%;
 
 nav{
 	padding:0 0 0 0;
-    width:960px;
+	width:95%;
+	min-width: 960px;
     display:block;
     float:left;
     position:relative;
@@ -225,7 +233,7 @@ nav ul{
 	font:14px 'NobileItalic',Arial,sans-serif;
     display:block;
     text-decoration:none;
-    color:#222;
+    color:rgba(177, 166, 170, 1);
     padding:10px 25px 10px 5px;
  }
  
@@ -276,7 +284,7 @@ nav ul{
  
 nav ul ul:hover > a{
 	background-color:#423f35;
-    color:#ccc;
+     color:rgba(177, 171, 171, 1);
     border-radius:5px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
@@ -286,7 +294,7 @@ nav ul ul:hover > a{
 
  .menu-header ul ul.submenu li:hover:first-child> a	{
  	background-color:#423f35;
-    color:#ccc;
+    color:rgba(177, 171, 171, 1);
     border-top-left-radius:5px;
     -moz-border-radius-topleft:5px;
     -webkit-border-top-left-radius:5px;
@@ -297,7 +305,7 @@ nav ul ul:hover > a{
    
   .menu-header ul ul ul li:hover:first-child> a	{
  	background-color:#423f35;
-    color:#ccc;
+    color:rgba(177, 171, 171, 1);
     border-top-left-radius:5px;
     -moz-border-radius-topleft:5px;
     -webkit-border-top-left-radius:5px;
@@ -308,7 +316,7 @@ nav ul ul:hover > a{
  
  .menu-header ul li:hover> a	{
  	background-color:#423f35;
-    color:#ccc;
+    color:rgba(177, 171, 171, 1);
 
    }
     
@@ -331,7 +339,7 @@ nav ul ul.sub-menu:hover li:last-child > a	{
 
  .menu-header ul li:hover:first-child> a	{
  	background-color:#423f35;
-    color:#ccc;
+     color:rgba(177, 171, 171, 1);
     border-top-left-radius:5px;
     -moz-border-radius-topleft:5px;
     -webkit-border-top-left-radius:5px;
@@ -342,7 +350,7 @@ nav ul ul.sub-menu:hover li:last-child > a	{
   
  .menu-header ul li:hover> a	{
  	background-color:#423f35;
-    color:#ccc;
+     color:rgba(177, 171, 171, 1);
     border-top-left-radius:5px;
     -moz-border-radius-topleft:5px;
     -webkit-border-top-left-radius:5px;
@@ -353,7 +361,7 @@ nav ul ul.sub-menu:hover li:last-child > a	{
   
   .menu-header ul  li:hover:last-child > a	{
  	background-color:#423f35;
-    color:#ccc;
+     color:rgba(177, 171, 171, 1);
     border-top-left-radius:5px;
     -moz-border-radius-topleft:5px;
     -webkit-border-top-left-radius:5px;
@@ -397,17 +405,18 @@ section#categoryContent	{
 }
 
 section#pageContent	{
-	width:100%;
+	width:95%;
 }
 
 .post	{
 	margin:20px 0;
 }
 
-article header h2 {
+article header h2.headerMain {
 	font:26px 'CaviarDreamsRegular',Arial,sans-serif;
 	padding:20px 0;
 	margin:30px 0 0 0;
+	color:rgba(103, 22, 56, 1);
 }
 
 article img	{
@@ -518,6 +527,8 @@ footer	{
 	box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
 	padding-top:20px;
 	clear: both;
+	width:95%;
+	min-width: 960px;
 }
 
 

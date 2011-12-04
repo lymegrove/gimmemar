@@ -1,12 +1,12 @@
 <?php get_header(); ?>
  
-      <section> <!-- body start-->
+      <section id="pageContent"> <!-- body start-->
  
       <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
  
             <article>
                 <header>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <h2 class="headerMain"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 </header>
  
                 <p>
@@ -24,8 +24,8 @@
         <?php endif; ?>
  <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
         </section>
-        <aside>
+        <!--aside>
         <?php get_sidebar(); ?>
-        </aside>
+        </aside-->
  
 <?php get_footer(); ?>

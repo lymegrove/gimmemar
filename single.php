@@ -8,7 +8,7 @@
             	
             	
                 <header>
-                <h2><?php the_title(); ?></h2>
+                <h2 class="headerMain"><?php the_title(); ?></h2>
                 <?php the_time('m/j/y g:i A') ?> | by: <a href="<?php bloginfo('url'); ?>/author/<?php the_author_nickname(); ?>"><?php the_author(); ?></a> | <a href="<?php comments_link(); ?>"><?php comments_number('No Comments', '1 Comment', '% Comments' );?></a>
                 <span  class='st_sharethis' displayText='ShareThis'></span>
                 </header>

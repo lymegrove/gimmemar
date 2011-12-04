@@ -6,7 +6,7 @@
  
         <article>
                 <header>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <h2 class="headerMain"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 <?php the_time('m/j/y g:i A') ?> | by: <a href="<?php bloginfo('url'); ?>/author/<?php the_author_nickname(); ?>"><?php the_author(); ?></a> | <a href="<?php comments_link(); ?>"><?php comments_number('No Comments', '1 Comment', '% Comments' );?></a>
                 <span  class='st_sharethis' displayText='ShareThis'></span>
                 </header>
