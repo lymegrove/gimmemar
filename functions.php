@@ -22,6 +22,10 @@ add_theme_support( 'menus' );
 
 add_editor_style('style.css');
  
+function youtubeSC($atts) {
 
+	return '<object width="425" height="344"><param name="movie" value="'.substr($atts[0],1).'?hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'.substr($atts[0],1).'?hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>';
+}
+add_shortcode("youtube", "youtubeSC");
 
 ?>
