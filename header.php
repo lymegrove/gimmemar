@@ -12,6 +12,38 @@
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" /><!-- look for the main-stylesheet in wordpress dir-->
 <?php wp_head(); ?>
+<style type="text/css">
+body{
+background-color: <?php echo get_option('color1'); ?>;
+color:	<?php echo get_option('color2'); ?>;
+}
+p	{
+color:	<?php echo get_option('color2'); ?>;
+}
+.headerMain	{
+color:	<?php echo get_option('color3'); ?>;
+}
+a, a:active, a:visited {
+color:	<?php echo get_option('color4'); ?>;
+}
+a:hover	{
+color:	<?php echo get_option('color5'); ?>;
+}
+.menu-header ul li a	{	
+color:	<?php echo get_option('color6'); ?>;
+}
+.menu-header ul li:hover:first-child > a,
+.menu-header ul li:hover:last-child > a,
+.menu-header ul ul ul li:hover:first-child> a,
+.menu-header ul ul.submenu li:hover:first-child> a,
+.menu-header ul li:hover > a	{	
+color:	<?php echo get_option('color7'); ?>;
+}
+.menu-header ul ul a	{
+color:	<?php echo get_option('color7'); ?>;
+}
+
+</style>
 </head>
  
 <body>
